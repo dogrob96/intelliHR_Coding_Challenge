@@ -9,7 +9,7 @@ require('./config/passport');
 
 const app = express();
 
-mongoose.connect("mongodb://dogrob96:Big#1234@192.168.1.14/intellihr?authSource=admin&w=1", { useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb://localhost/aperturescince?authSource=admin&w=1", { useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false}));
